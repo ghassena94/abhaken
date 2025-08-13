@@ -1,0 +1,142 @@
+
+.dashboard-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: transparent;
+  border-radius: 1rem;
+}
+
+.latest-activity-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: #4B54B7;
+}
+
+.view-all {
+  color: #6c47ff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.activity-list,
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-wrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.icon-wrapper.blue {
+  background-color: #e6efff;
+  color: #407bff;
+}
+
+.icon-wrapper.red {
+  background-color: #ffecec;
+  color: #ff4b4b;
+}
+
+.icon-wrapper.green {
+  background-color: #e4ffee;
+  color: #3cb371;
+}
+
+.icon-wrapper.orange {
+  background-color: #fff3e6;
+  color: #ff9933;
+}
+
+.activity-content,
+.notification-content {
+  flex: 1;
+}
+
+.activity-title,
+.notification-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.notification-message {
+  flex: 1;
+}
+
+.activity-description,
+.notification-description {
+  font-size: 0.875rem;
+  color: #5f6368;
+}
+
+.activity-time,
+.notification-time {
+  font-size: 0.75rem;
+  color: #999;
+  margin-left: auto;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: 0.75rem;
+}
+
+.dot.purple {
+  background-color: #4B54B7;
+}

@@ -1,0 +1,23 @@
+body {
+    font-family: "Poppins", sans-serif !important;
+    background-color: #f7f8f9 !important;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.page-layout {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main-container-with-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 100vh;
+    transition: margin-left 0.3s ease;
+}
